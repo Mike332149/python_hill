@@ -26,8 +26,24 @@
 #print(divmod(16,2))
 #print(divmod(55,2))
 #print(help(divmod))
-input_number = int (input("Enter number: "))
-input_number2 = int(input("Enter number2: "))
+#input_number = input("Enter number: ")
+#input_number2 = input("Enter number2: ")
 
-print(type(input_number))
-print(input_number + input_number2)
+#print(type(input_number))
+#print(input_number)
+
+# Запитуємо вхідні дані у користувача
+number = int(input("Введіть 4-х значне число: "))
+
+# Витягуємо цифри за допомогою // та %
+n1 = number // 1000               # тисячі
+n2 = (number // 100) % 10         # сотні
+n3 = (number // 10) % 10          # десятки
+n4 = number % 10                  # одиниці
+
+# Виводимо результат
+print(type(number))
+print(n1)
+print(n2)
+print(n3)
+print(n4)
