@@ -35,16 +35,18 @@ MY_CONST = 10
 #print(some_value is some_value2)
 #print(some_value == some_value2)
 
-some_int = 34
+some_int = 30
 some_int2 = 34
 
-if some_int < some_int2 or some_int == some_int2:
-    print(f"{some_int} is less than {some_int2}")
-
-elif some_int == some_int2:
-    print(f"{some_int} is equal to {some_int2}")
-
-else:
-    print(f"{some_int} is greater than {some_int2}")
-
-print("end")
+# if some_int < some_int2 or some_int == some_int2:
+#     print(f"{some_int} is less than {some_int2}")
+#
+# elif some_int == some_int2:
+#     print(f"{some_int} is equal to {some_int2}")
+#
+# else:
+#     print(f"{some_int} is greater than {some_int2}")
+#
+# print("end")
+some_value = 10 if some_int < some_int2 else 20
+print(some_value)
