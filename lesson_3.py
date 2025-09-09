@@ -99,3 +99,10 @@ else:
 
 size = len(my_list)
 print(size)
+
+# my_secondList = [3,5,7]
+# all_myLists = my_list + my_secondList
+# print(all_myLists)
+
+my_list.extend([99,88,77,66])
+print(my_list)
