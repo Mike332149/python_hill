@@ -74,7 +74,7 @@ from copy import deepcopy
 lst = [2,3.4, True, "hello", [1,4],6]
 #lst1 = list()
 #print(lst[5][0])
-my_list = [1,2,3]
+my_list = [1,2,3,87,55]
 #print(my_list *3) #всі елементи з початку до 3-го включно
 #print(my_list[2]) #другий елемент
 #print(lst[-2]) #другий з кінця елемент списк
@@ -82,12 +82,20 @@ my_list = [1,2,3]
 
 #my_list[2] = 10 #changing one of element in list
 #del my_list[2] #deliting one of element of list
+#
+# new_list = deepcopy(lst) + my_list
+# lst[2] = False #changing element1 in element4 on  value 5
+# lst[4][1] = 5
+# print(new_list)
+# print(lst)
+# print(my_list)
+# print ("hello" in lst)
+# print(len(lst))
 
-new_list = deepcopy(lst) + my_list
-lst[2] = False #changing element1 in element4 on  value 5
-lst[4][1] = 5
-print(new_list)
-print(lst)
-print(my_list)
-print ("hello" in lst)
-print(len(lst))
+if 3 in my_list:
+    print("Yes. It is in the list")
+else:
+    print("No. It is not in the list")
+
+size = len(my_list)
+print(size)
